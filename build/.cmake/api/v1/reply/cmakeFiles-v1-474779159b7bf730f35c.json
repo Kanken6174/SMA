@@ -125,6 +125,12 @@
 			"path" : "backend/CMakeLists.txt"
 		},
 		{
+			"path" : "backend/agents/CMakeLists.txt"
+		},
+		{
+			"path" : "backend/solvers/CMakeLists.txt"
+		},
+		{
 			"path" : "ui/CMakeLists.txt"
 		}
 	],

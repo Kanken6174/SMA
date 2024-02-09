@@ -4,6 +4,12 @@
 /home/kanken/code/cpp-adv/SMA/build/backend/CMakeFiles/backend.dir
 /home/kanken/code/cpp-adv/SMA/build/backend/CMakeFiles/edit_cache.dir
 /home/kanken/code/cpp-adv/SMA/build/backend/CMakeFiles/rebuild_cache.dir
+/home/kanken/code/cpp-adv/SMA/build/backend/agents/CMakeFiles/agents.dir
+/home/kanken/code/cpp-adv/SMA/build/backend/agents/CMakeFiles/edit_cache.dir
+/home/kanken/code/cpp-adv/SMA/build/backend/agents/CMakeFiles/rebuild_cache.dir
+/home/kanken/code/cpp-adv/SMA/build/backend/solvers/CMakeFiles/solvers.dir
+/home/kanken/code/cpp-adv/SMA/build/backend/solvers/CMakeFiles/edit_cache.dir
+/home/kanken/code/cpp-adv/SMA/build/backend/solvers/CMakeFiles/rebuild_cache.dir
 /home/kanken/code/cpp-adv/SMA/build/ui/CMakeFiles/ui.dir
 /home/kanken/code/cpp-adv/SMA/build/ui/CMakeFiles/edit_cache.dir
 /home/kanken/code/cpp-adv/SMA/build/ui/CMakeFiles/rebuild_cache.dir

@@ -9,7 +9,7 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						4
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -20,11 +20,16 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
 					"build" : "backend",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
 					"jsonFile" : "directory-backend-Debug-8702910ebe8ec25d8860.json",
 					"minimumCMakeVersion" : 
 					{
@@ -35,7 +40,37 @@
 					"source" : "backend",
 					"targetIndexes" : 
 					[
+						1
+					]
+				},
+				{
+					"build" : "backend/agents",
+					"jsonFile" : "directory-backend.agents-Debug-6426c86d3cf5abd03154.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "backend/agents",
+					"targetIndexes" : 
+					[
 						0
+					]
+				},
+				{
+					"build" : "backend/solvers",
+					"jsonFile" : "directory-backend.solvers-Debug-f6d0f0aa01f4913b48ab.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "backend/solvers",
+					"targetIndexes" : 
+					[
+						3
 					]
 				},
 				{
@@ -50,7 +85,7 @@
 					"source" : "ui",
 					"targetIndexes" : 
 					[
-						2
+						4
 					]
 				}
 			],
@@ -62,23 +97,34 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4
 					],
 					"name" : "nomnom",
 					"targetIndexes" : 
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
+					"directoryIndex" : 2,
+					"id" : "agents::@05c79680ac561cdb9a3c",
+					"jsonFile" : "target-agents-Debug-c37e5c911085e85ca939.json",
+					"name" : "agents",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 1,
 					"id" : "backend::@e17dcb4e28158375c849",
-					"jsonFile" : "target-backend-Debug-2bfda76664fb0ba00a9e.json",
+					"jsonFile" : "target-backend-Debug-24ce4cdc3485150f7d5b.json",
 					"name" : "backend",
 					"projectIndex" : 0
 				},
@@ -90,7 +136,14 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 2,
+					"directoryIndex" : 3,
+					"id" : "solvers::@b6b72789cb00fcc3e86b",
+					"jsonFile" : "target-solvers-Debug-dc7c2d231330b2eaf3be.json",
+					"name" : "solvers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
 					"id" : "ui::@19b8bf288843bf358763",
 					"jsonFile" : "target-ui-Debug-c700ebc798da1dc7d76f.json",
 					"name" : "ui",

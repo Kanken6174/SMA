@@ -6,28 +6,43 @@
 },
 {
   "directory": "/home/kanken/code/cpp-adv/SMA/build/backend",
-  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/backend.dir/agent.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/agent.cpp",
-  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/agent.cpp"
-},
-{
-  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend",
   "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/backend.dir/gamespace.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/gamespace.cpp",
   "file": "/home/kanken/code/cpp-adv/SMA/src/backend/gamespace.cpp"
 },
 {
   "directory": "/home/kanken/code/cpp-adv/SMA/build/backend",
-  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/backend.dir/predator.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/predator.cpp",
-  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/predator.cpp"
-},
-{
-  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend",
-  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/backend.dir/prey.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/prey.cpp",
-  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/prey.cpp"
-},
-{
-  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend",
   "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/backend.dir/randomGen.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/randomGen.cpp",
   "file": "/home/kanken/code/cpp-adv/SMA/src/backend/randomGen.cpp"
+},
+{
+  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend/agents",
+  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/agents.dir/agent.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/agents/agent.cpp",
+  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/agents/agent.cpp"
+},
+{
+  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend/agents",
+  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/agents.dir/predator.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/agents/predator.cpp",
+  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/agents/predator.cpp"
+},
+{
+  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend/agents",
+  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/agents.dir/prey.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/agents/prey.cpp",
+  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/agents/prey.cpp"
+},
+{
+  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend/solvers",
+  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/solvers.dir/solver.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/solvers/solver.cpp",
+  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/solvers/solver.cpp"
+},
+{
+  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend/solvers",
+  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/solvers.dir/predatorSolver.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/solvers/predatorSolver.cpp",
+  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/solvers/predatorSolver.cpp"
+},
+{
+  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend/solvers",
+  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/solvers.dir/preySolver.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/solvers/preySolver.cpp",
+  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/solvers/preySolver.cpp"
 },
 {
   "directory": "/home/kanken/code/cpp-adv/SMA/build/ui",

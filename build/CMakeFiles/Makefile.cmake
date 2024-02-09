@@ -12,6 +12,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "/home/kanken/code/cpp-adv/SMA/src/CMakeLists.txt"
   "/home/kanken/code/cpp-adv/SMA/src/backend/CMakeLists.txt"
+  "/home/kanken/code/cpp-adv/SMA/src/backend/agents/CMakeLists.txt"
+  "/home/kanken/code/cpp-adv/SMA/src/backend/solvers/CMakeLists.txt"
   "/home/kanken/code/cpp-adv/SMA/src/ui/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
@@ -42,6 +44,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "backend/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "backend/agents/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "backend/solvers/CMakeFiles/CMakeDirectoryInformation.cmake"
   "ui/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -49,5 +53,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/nomnomGame.dir/DependInfo.cmake"
   "backend/CMakeFiles/backend.dir/DependInfo.cmake"
+  "backend/agents/CMakeFiles/agents.dir/DependInfo.cmake"
+  "backend/solvers/CMakeFiles/solvers.dir/DependInfo.cmake"
   "ui/CMakeFiles/ui.dir/DependInfo.cmake"
   )

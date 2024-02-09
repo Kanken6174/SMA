@@ -1,5 +1,5 @@
 #pragma once
-#include "agent.hpp"
+#include "predator.hpp"
 
 class Prey : public Agent {
 public:
