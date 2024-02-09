@@ -1,0 +1,1 @@
+This is just a tiny little SMA (multi agents simulation) in c++

@@ -50,5 +50,6 @@
         "semaphore": "cpp",
         "stop_token": "cpp",
         "thread": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/kanken/code/cpp-adv/SMA/src"
 }
