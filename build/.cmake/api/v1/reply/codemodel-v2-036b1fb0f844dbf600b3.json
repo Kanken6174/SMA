@@ -1,0 +1,113 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "backend",
+					"jsonFile" : "directory-backend-Debug-8702910ebe8ec25d8860.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "backend",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "ui",
+					"jsonFile" : "directory-ui-Debug-af8d1db614f1c3f3d0dc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "ui",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "nomnom",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "backend::@e17dcb4e28158375c849",
+					"jsonFile" : "target-backend-Debug-2bfda76664fb0ba00a9e.json",
+					"name" : "backend",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nomnomGame::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nomnomGame-Debug-0cb146ea68a377ed1071.json",
+					"name" : "nomnomGame",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ui::@19b8bf288843bf358763",
+					"jsonFile" : "target-ui-Debug-c700ebc798da1dc7d76f.json",
+					"name" : "ui",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kanken/code/cpp-adv/SMA/build",
+		"source" : "/home/kanken/code/cpp-adv/SMA/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

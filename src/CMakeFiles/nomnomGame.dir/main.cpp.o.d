@@ -146,13 +146,14 @@ CMakeFiles/nomnomGame.dir/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/kanken/code/cpp-adv/SMA/src/cliGameDisplay.hpp \
- /home/kanken/code/cpp-adv/SMA/src/gameDisplay.hpp \
- /home/kanken/code/cpp-adv/SMA/src/gamespace.hpp \
- /home/kanken/code/cpp-adv/SMA/src/prey.hpp \
- /home/kanken/code/cpp-adv/SMA/src/agent.hpp \
- /home/kanken/code/cpp-adv/SMA/src/position.hpp /usr/include/c++/11/cmath \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /home/kanken/code/cpp-adv/SMA/src/./ui/cliGameDisplay.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./ui/gameDisplay.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/gamespace.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/prey.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/agent.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/position.hpp \
+ /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
@@ -174,7 +175,7 @@ CMakeFiles/nomnomGame.dir/main.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/kanken/code/cpp-adv/SMA/src/predator.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/predator.hpp \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/tuple /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/array \
@@ -184,7 +185,7 @@ CMakeFiles/nomnomGame.dir/main.cpp.o: \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/ctime \
  /usr/include/c++/11/bits/parse_numbers.h \
- /home/kanken/code/cpp-adv/SMA/src/randomGen.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/randomGen.hpp \
  /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \

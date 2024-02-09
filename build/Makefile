@@ -129,77 +129,31 @@ nomnomGame/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/build
 .PHONY : nomnomGame/fast
 
-agent.o: agent.cpp.o
-.PHONY : agent.o
+#=============================================================================
+# Target rules for targets named backend
 
-# target to build an object file
-agent.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/agent.cpp.o
-.PHONY : agent.cpp.o
+# Build rule for target.
+backend: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend
+.PHONY : backend
 
-agent.i: agent.cpp.i
-.PHONY : agent.i
+# fast build rule for target.
+backend/fast:
+	$(MAKE) $(MAKESILENT) -f backend/CMakeFiles/backend.dir/build.make backend/CMakeFiles/backend.dir/build
+.PHONY : backend/fast
 
-# target to preprocess a source file
-agent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/agent.cpp.i
-.PHONY : agent.cpp.i
+#=============================================================================
+# Target rules for targets named ui
 
-agent.s: agent.cpp.s
-.PHONY : agent.s
+# Build rule for target.
+ui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui
+.PHONY : ui
 
-# target to generate assembly for a file
-agent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/agent.cpp.s
-.PHONY : agent.cpp.s
-
-cliGameDisplay.o: cliGameDisplay.cpp.o
-.PHONY : cliGameDisplay.o
-
-# target to build an object file
-cliGameDisplay.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.o
-.PHONY : cliGameDisplay.cpp.o
-
-cliGameDisplay.i: cliGameDisplay.cpp.i
-.PHONY : cliGameDisplay.i
-
-# target to preprocess a source file
-cliGameDisplay.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.i
-.PHONY : cliGameDisplay.cpp.i
-
-cliGameDisplay.s: cliGameDisplay.cpp.s
-.PHONY : cliGameDisplay.s
-
-# target to generate assembly for a file
-cliGameDisplay.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.s
-.PHONY : cliGameDisplay.cpp.s
-
-gamespace.o: gamespace.cpp.o
-.PHONY : gamespace.o
-
-# target to build an object file
-gamespace.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/gamespace.cpp.o
-.PHONY : gamespace.cpp.o
-
-gamespace.i: gamespace.cpp.i
-.PHONY : gamespace.i
-
-# target to preprocess a source file
-gamespace.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/gamespace.cpp.i
-.PHONY : gamespace.cpp.i
-
-gamespace.s: gamespace.cpp.s
-.PHONY : gamespace.s
-
-# target to generate assembly for a file
-gamespace.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/gamespace.cpp.s
-.PHONY : gamespace.cpp.s
+# fast build rule for target.
+ui/fast:
+	$(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/build
+.PHONY : ui/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -225,78 +179,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-predator.o: predator.cpp.o
-.PHONY : predator.o
-
-# target to build an object file
-predator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/predator.cpp.o
-.PHONY : predator.cpp.o
-
-predator.i: predator.cpp.i
-.PHONY : predator.i
-
-# target to preprocess a source file
-predator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/predator.cpp.i
-.PHONY : predator.cpp.i
-
-predator.s: predator.cpp.s
-.PHONY : predator.s
-
-# target to generate assembly for a file
-predator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/predator.cpp.s
-.PHONY : predator.cpp.s
-
-prey.o: prey.cpp.o
-.PHONY : prey.o
-
-# target to build an object file
-prey.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/prey.cpp.o
-.PHONY : prey.cpp.o
-
-prey.i: prey.cpp.i
-.PHONY : prey.i
-
-# target to preprocess a source file
-prey.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/prey.cpp.i
-.PHONY : prey.cpp.i
-
-prey.s: prey.cpp.s
-.PHONY : prey.s
-
-# target to generate assembly for a file
-prey.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/prey.cpp.s
-.PHONY : prey.cpp.s
-
-randomGen.o: randomGen.cpp.o
-.PHONY : randomGen.o
-
-# target to build an object file
-randomGen.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/randomGen.cpp.o
-.PHONY : randomGen.cpp.o
-
-randomGen.i: randomGen.cpp.i
-.PHONY : randomGen.i
-
-# target to preprocess a source file
-randomGen.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/randomGen.cpp.i
-.PHONY : randomGen.cpp.i
-
-randomGen.s: randomGen.cpp.s
-.PHONY : randomGen.s
-
-# target to generate assembly for a file
-randomGen.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/randomGen.cpp.s
-.PHONY : randomGen.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -305,28 +187,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... backend"
 	@echo "... nomnomGame"
-	@echo "... agent.o"
-	@echo "... agent.i"
-	@echo "... agent.s"
-	@echo "... cliGameDisplay.o"
-	@echo "... cliGameDisplay.i"
-	@echo "... cliGameDisplay.s"
-	@echo "... gamespace.o"
-	@echo "... gamespace.i"
-	@echo "... gamespace.s"
+	@echo "... ui"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... predator.o"
-	@echo "... predator.i"
-	@echo "... predator.s"
-	@echo "... prey.o"
-	@echo "... prey.i"
-	@echo "... prey.s"
-	@echo "... randomGen.o"
-	@echo "... randomGen.i"
-	@echo "... randomGen.s"
 .PHONY : help
 
 

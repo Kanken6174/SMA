@@ -69,52 +69,10 @@ include CMakeFiles/nomnomGame.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/nomnomGame.dir/flags.make
 
-CMakeFiles/nomnomGame.dir/agent.cpp.o: CMakeFiles/nomnomGame.dir/flags.make
-CMakeFiles/nomnomGame.dir/agent.cpp.o: /home/kanken/code/cpp-adv/SMA/src/agent.cpp
-CMakeFiles/nomnomGame.dir/agent.cpp.o: CMakeFiles/nomnomGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/cpp-adv/SMA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nomnomGame.dir/agent.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nomnomGame.dir/agent.cpp.o -MF CMakeFiles/nomnomGame.dir/agent.cpp.o.d -o CMakeFiles/nomnomGame.dir/agent.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/agent.cpp
-
-CMakeFiles/nomnomGame.dir/agent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nomnomGame.dir/agent.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/cpp-adv/SMA/src/agent.cpp > CMakeFiles/nomnomGame.dir/agent.cpp.i
-
-CMakeFiles/nomnomGame.dir/agent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nomnomGame.dir/agent.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/cpp-adv/SMA/src/agent.cpp -o CMakeFiles/nomnomGame.dir/agent.cpp.s
-
-CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.o: CMakeFiles/nomnomGame.dir/flags.make
-CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.o: /home/kanken/code/cpp-adv/SMA/src/cliGameDisplay.cpp
-CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.o: CMakeFiles/nomnomGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/cpp-adv/SMA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.o -MF CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.o.d -o CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/cliGameDisplay.cpp
-
-CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/cpp-adv/SMA/src/cliGameDisplay.cpp > CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.i
-
-CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/cpp-adv/SMA/src/cliGameDisplay.cpp -o CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.s
-
-CMakeFiles/nomnomGame.dir/gamespace.cpp.o: CMakeFiles/nomnomGame.dir/flags.make
-CMakeFiles/nomnomGame.dir/gamespace.cpp.o: /home/kanken/code/cpp-adv/SMA/src/gamespace.cpp
-CMakeFiles/nomnomGame.dir/gamespace.cpp.o: CMakeFiles/nomnomGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/cpp-adv/SMA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nomnomGame.dir/gamespace.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nomnomGame.dir/gamespace.cpp.o -MF CMakeFiles/nomnomGame.dir/gamespace.cpp.o.d -o CMakeFiles/nomnomGame.dir/gamespace.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/gamespace.cpp
-
-CMakeFiles/nomnomGame.dir/gamespace.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nomnomGame.dir/gamespace.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/cpp-adv/SMA/src/gamespace.cpp > CMakeFiles/nomnomGame.dir/gamespace.cpp.i
-
-CMakeFiles/nomnomGame.dir/gamespace.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nomnomGame.dir/gamespace.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/cpp-adv/SMA/src/gamespace.cpp -o CMakeFiles/nomnomGame.dir/gamespace.cpp.s
-
 CMakeFiles/nomnomGame.dir/main.cpp.o: CMakeFiles/nomnomGame.dir/flags.make
 CMakeFiles/nomnomGame.dir/main.cpp.o: /home/kanken/code/cpp-adv/SMA/src/main.cpp
 CMakeFiles/nomnomGame.dir/main.cpp.o: CMakeFiles/nomnomGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/cpp-adv/SMA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nomnomGame.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/cpp-adv/SMA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nomnomGame.dir/main.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nomnomGame.dir/main.cpp.o -MF CMakeFiles/nomnomGame.dir/main.cpp.o.d -o CMakeFiles/nomnomGame.dir/main.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/main.cpp
 
 CMakeFiles/nomnomGame.dir/main.cpp.i: cmake_force
@@ -125,71 +83,19 @@ CMakeFiles/nomnomGame.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nomnomGame.dir/main.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/cpp-adv/SMA/src/main.cpp -o CMakeFiles/nomnomGame.dir/main.cpp.s
 
-CMakeFiles/nomnomGame.dir/predator.cpp.o: CMakeFiles/nomnomGame.dir/flags.make
-CMakeFiles/nomnomGame.dir/predator.cpp.o: /home/kanken/code/cpp-adv/SMA/src/predator.cpp
-CMakeFiles/nomnomGame.dir/predator.cpp.o: CMakeFiles/nomnomGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/cpp-adv/SMA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/nomnomGame.dir/predator.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nomnomGame.dir/predator.cpp.o -MF CMakeFiles/nomnomGame.dir/predator.cpp.o.d -o CMakeFiles/nomnomGame.dir/predator.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/predator.cpp
-
-CMakeFiles/nomnomGame.dir/predator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nomnomGame.dir/predator.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/cpp-adv/SMA/src/predator.cpp > CMakeFiles/nomnomGame.dir/predator.cpp.i
-
-CMakeFiles/nomnomGame.dir/predator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nomnomGame.dir/predator.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/cpp-adv/SMA/src/predator.cpp -o CMakeFiles/nomnomGame.dir/predator.cpp.s
-
-CMakeFiles/nomnomGame.dir/prey.cpp.o: CMakeFiles/nomnomGame.dir/flags.make
-CMakeFiles/nomnomGame.dir/prey.cpp.o: /home/kanken/code/cpp-adv/SMA/src/prey.cpp
-CMakeFiles/nomnomGame.dir/prey.cpp.o: CMakeFiles/nomnomGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/cpp-adv/SMA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nomnomGame.dir/prey.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nomnomGame.dir/prey.cpp.o -MF CMakeFiles/nomnomGame.dir/prey.cpp.o.d -o CMakeFiles/nomnomGame.dir/prey.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/prey.cpp
-
-CMakeFiles/nomnomGame.dir/prey.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nomnomGame.dir/prey.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/cpp-adv/SMA/src/prey.cpp > CMakeFiles/nomnomGame.dir/prey.cpp.i
-
-CMakeFiles/nomnomGame.dir/prey.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nomnomGame.dir/prey.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/cpp-adv/SMA/src/prey.cpp -o CMakeFiles/nomnomGame.dir/prey.cpp.s
-
-CMakeFiles/nomnomGame.dir/randomGen.cpp.o: CMakeFiles/nomnomGame.dir/flags.make
-CMakeFiles/nomnomGame.dir/randomGen.cpp.o: /home/kanken/code/cpp-adv/SMA/src/randomGen.cpp
-CMakeFiles/nomnomGame.dir/randomGen.cpp.o: CMakeFiles/nomnomGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kanken/code/cpp-adv/SMA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/nomnomGame.dir/randomGen.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nomnomGame.dir/randomGen.cpp.o -MF CMakeFiles/nomnomGame.dir/randomGen.cpp.o.d -o CMakeFiles/nomnomGame.dir/randomGen.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/randomGen.cpp
-
-CMakeFiles/nomnomGame.dir/randomGen.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nomnomGame.dir/randomGen.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kanken/code/cpp-adv/SMA/src/randomGen.cpp > CMakeFiles/nomnomGame.dir/randomGen.cpp.i
-
-CMakeFiles/nomnomGame.dir/randomGen.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nomnomGame.dir/randomGen.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kanken/code/cpp-adv/SMA/src/randomGen.cpp -o CMakeFiles/nomnomGame.dir/randomGen.cpp.s
-
 # Object files for target nomnomGame
 nomnomGame_OBJECTS = \
-"CMakeFiles/nomnomGame.dir/agent.cpp.o" \
-"CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.o" \
-"CMakeFiles/nomnomGame.dir/gamespace.cpp.o" \
-"CMakeFiles/nomnomGame.dir/main.cpp.o" \
-"CMakeFiles/nomnomGame.dir/predator.cpp.o" \
-"CMakeFiles/nomnomGame.dir/prey.cpp.o" \
-"CMakeFiles/nomnomGame.dir/randomGen.cpp.o"
+"CMakeFiles/nomnomGame.dir/main.cpp.o"
 
 # External object files for target nomnomGame
 nomnomGame_EXTERNAL_OBJECTS =
 
-nomnomGame: CMakeFiles/nomnomGame.dir/agent.cpp.o
-nomnomGame: CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.o
-nomnomGame: CMakeFiles/nomnomGame.dir/gamespace.cpp.o
 nomnomGame: CMakeFiles/nomnomGame.dir/main.cpp.o
-nomnomGame: CMakeFiles/nomnomGame.dir/predator.cpp.o
-nomnomGame: CMakeFiles/nomnomGame.dir/prey.cpp.o
-nomnomGame: CMakeFiles/nomnomGame.dir/randomGen.cpp.o
 nomnomGame: CMakeFiles/nomnomGame.dir/build.make
+nomnomGame: backend/libbackend.a
+nomnomGame: ui/libui.a
 nomnomGame: CMakeFiles/nomnomGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/cpp-adv/SMA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable nomnomGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kanken/code/cpp-adv/SMA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable nomnomGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nomnomGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

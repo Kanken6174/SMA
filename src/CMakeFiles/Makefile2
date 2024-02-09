@@ -64,29 +64,65 @@ CMAKE_BINARY_DIR = /home/kanken/code/cpp-adv/SMA/src
 
 # The main recursive "all" target.
 all: CMakeFiles/nomnomGame.dir/all
+all: backend/all
+all: ui/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: backend/preinstall
+preinstall: ui/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/nomnomGame.dir/clean
+clean: backend/clean
+clean: ui/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory backend
+
+# Recursive "all" directory target.
+backend/all: backend/CMakeFiles/backend.dir/all
+.PHONY : backend/all
+
+# Recursive "preinstall" directory target.
+backend/preinstall:
+.PHONY : backend/preinstall
+
+# Recursive "clean" directory target.
+backend/clean: backend/CMakeFiles/backend.dir/clean
+.PHONY : backend/clean
+
+#=============================================================================
+# Directory level rules for directory ui
+
+# Recursive "all" directory target.
+ui/all: ui/CMakeFiles/ui.dir/all
+.PHONY : ui/all
+
+# Recursive "preinstall" directory target.
+ui/preinstall:
+.PHONY : ui/preinstall
+
+# Recursive "clean" directory target.
+ui/clean: ui/CMakeFiles/ui.dir/clean
+.PHONY : ui/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/nomnomGame.dir
 
 # All Build rule for target.
-CMakeFiles/nomnomGame.dir/all:
+CMakeFiles/nomnomGame.dir/all: backend/CMakeFiles/backend.dir/all
+CMakeFiles/nomnomGame.dir/all: ui/CMakeFiles/ui.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/SMA/src/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target nomnomGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/SMA/src/CMakeFiles --progress-num=7,8 "Built target nomnomGame"
 .PHONY : CMakeFiles/nomnomGame.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nomnomGame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nomnomGame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 0
 .PHONY : CMakeFiles/nomnomGame.dir/rule
@@ -99,6 +135,58 @@ nomnomGame: CMakeFiles/nomnomGame.dir/rule
 CMakeFiles/nomnomGame.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/clean
 .PHONY : CMakeFiles/nomnomGame.dir/clean
+
+#=============================================================================
+# Target rules for target backend/CMakeFiles/backend.dir
+
+# All Build rule for target.
+backend/CMakeFiles/backend.dir/all:
+	$(MAKE) $(MAKESILENT) -f backend/CMakeFiles/backend.dir/build.make backend/CMakeFiles/backend.dir/depend
+	$(MAKE) $(MAKESILENT) -f backend/CMakeFiles/backend.dir/build.make backend/CMakeFiles/backend.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/SMA/src/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target backend"
+.PHONY : backend/CMakeFiles/backend.dir/all
+
+# Build rule for subdir invocation for target.
+backend/CMakeFiles/backend.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/CMakeFiles/backend.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 0
+.PHONY : backend/CMakeFiles/backend.dir/rule
+
+# Convenience name for target.
+backend: backend/CMakeFiles/backend.dir/rule
+.PHONY : backend
+
+# clean rule for target.
+backend/CMakeFiles/backend.dir/clean:
+	$(MAKE) $(MAKESILENT) -f backend/CMakeFiles/backend.dir/build.make backend/CMakeFiles/backend.dir/clean
+.PHONY : backend/CMakeFiles/backend.dir/clean
+
+#=============================================================================
+# Target rules for target ui/CMakeFiles/ui.dir
+
+# All Build rule for target.
+ui/CMakeFiles/ui.dir/all:
+	$(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/depend
+	$(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/SMA/src/CMakeFiles --progress-num=9,10 "Built target ui"
+.PHONY : ui/CMakeFiles/ui.dir/all
+
+# Build rule for subdir invocation for target.
+ui/CMakeFiles/ui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ui/CMakeFiles/ui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 0
+.PHONY : ui/CMakeFiles/ui.dir/rule
+
+# Convenience name for target.
+ui: ui/CMakeFiles/ui.dir/rule
+.PHONY : ui
+
+# clean rule for target.
+ui/CMakeFiles/ui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/clean
+.PHONY : ui/CMakeFiles/ui.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

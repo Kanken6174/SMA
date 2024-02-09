@@ -1,3 +1,9 @@
 /home/kanken/code/cpp-adv/SMA/src/CMakeFiles/nomnomGame.dir
 /home/kanken/code/cpp-adv/SMA/src/CMakeFiles/edit_cache.dir
 /home/kanken/code/cpp-adv/SMA/src/CMakeFiles/rebuild_cache.dir
+/home/kanken/code/cpp-adv/SMA/src/backend/CMakeFiles/backend.dir
+/home/kanken/code/cpp-adv/SMA/src/backend/CMakeFiles/edit_cache.dir
+/home/kanken/code/cpp-adv/SMA/src/backend/CMakeFiles/rebuild_cache.dir
+/home/kanken/code/cpp-adv/SMA/src/ui/CMakeFiles/ui.dir
+/home/kanken/code/cpp-adv/SMA/src/ui/CMakeFiles/edit_cache.dir
+/home/kanken/code/cpp-adv/SMA/src/ui/CMakeFiles/rebuild_cache.dir

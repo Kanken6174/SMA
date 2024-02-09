@@ -1,8 +1,8 @@
 #include <iostream>
-#include "cliGameDisplay.hpp"
-#include "gamespace.hpp"
+#include "./ui/cliGameDisplay.hpp"
+#include "./backend/gamespace.hpp"
 #include <thread>
-#include "randomGen.hpp"
+#include "./backend/randomGen.hpp"
 int main(){
     CliGameDisplay display;
     Gamespace gamespace = Gamespace(12, 24);

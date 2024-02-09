@@ -1,37 +1,37 @@
 [
 {
   "directory": "/home/kanken/code/cpp-adv/SMA/build",
-  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/nomnomGame.dir/agent.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/agent.cpp",
-  "file": "/home/kanken/code/cpp-adv/SMA/src/agent.cpp"
-},
-{
-  "directory": "/home/kanken/code/cpp-adv/SMA/build",
-  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/nomnomGame.dir/cliGameDisplay.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/cliGameDisplay.cpp",
-  "file": "/home/kanken/code/cpp-adv/SMA/src/cliGameDisplay.cpp"
-},
-{
-  "directory": "/home/kanken/code/cpp-adv/SMA/build",
-  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/nomnomGame.dir/gamespace.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/gamespace.cpp",
-  "file": "/home/kanken/code/cpp-adv/SMA/src/gamespace.cpp"
-},
-{
-  "directory": "/home/kanken/code/cpp-adv/SMA/build",
   "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/nomnomGame.dir/main.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/main.cpp",
   "file": "/home/kanken/code/cpp-adv/SMA/src/main.cpp"
 },
 {
-  "directory": "/home/kanken/code/cpp-adv/SMA/build",
-  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/nomnomGame.dir/predator.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/predator.cpp",
-  "file": "/home/kanken/code/cpp-adv/SMA/src/predator.cpp"
+  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend",
+  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/backend.dir/agent.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/agent.cpp",
+  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/agent.cpp"
 },
 {
-  "directory": "/home/kanken/code/cpp-adv/SMA/build",
-  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/nomnomGame.dir/prey.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/prey.cpp",
-  "file": "/home/kanken/code/cpp-adv/SMA/src/prey.cpp"
+  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend",
+  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/backend.dir/gamespace.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/gamespace.cpp",
+  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/gamespace.cpp"
 },
 {
-  "directory": "/home/kanken/code/cpp-adv/SMA/build",
-  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/nomnomGame.dir/randomGen.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/randomGen.cpp",
-  "file": "/home/kanken/code/cpp-adv/SMA/src/randomGen.cpp"
+  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend",
+  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/backend.dir/predator.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/predator.cpp",
+  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/predator.cpp"
+},
+{
+  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend",
+  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/backend.dir/prey.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/prey.cpp",
+  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/prey.cpp"
+},
+{
+  "directory": "/home/kanken/code/cpp-adv/SMA/build/backend",
+  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/backend.dir/randomGen.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/backend/randomGen.cpp",
+  "file": "/home/kanken/code/cpp-adv/SMA/src/backend/randomGen.cpp"
+},
+{
+  "directory": "/home/kanken/code/cpp-adv/SMA/build/ui",
+  "command": "/usr/bin/g++   -g -Ofast -fPIC -ldl -o CMakeFiles/ui.dir/cliGameDisplay.cpp.o -c /home/kanken/code/cpp-adv/SMA/src/ui/cliGameDisplay.cpp",
+  "file": "/home/kanken/code/cpp-adv/SMA/src/ui/cliGameDisplay.cpp"
 }
 ]

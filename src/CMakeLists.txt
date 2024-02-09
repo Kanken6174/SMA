@@ -8,23 +8,16 @@ set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -fPIC -ldl")
 project(nomnom)
 
 set(main_source_files
-    agent.cpp
-    agent.hpp
-    cliGameDisplay.cpp
-    cliGameDisplay.hpp
-    gameDisplay.hpp
-    gamespace.cpp
-    gamespace.hpp
     main.cpp
-    position.hpp
-    predator.hpp
-    predator.cpp
-    prey.hpp
-    prey.cpp
-    randomGen.hpp
-    randomGen.cpp
 )
 
+add_subdirectory(backend)
+add_subdirectory(ui)
+
+
+
 add_executable(nomnomGame ${main_source_files})
+
+target_link_libraries(nomnomGame backend ui)
 
 MESSAGE(STATUS "CMAKE FLAGS : ${LINK_OPTIONS}")
