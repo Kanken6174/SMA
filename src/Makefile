@@ -143,6 +143,32 @@ backend/fast:
 .PHONY : backend/fast
 
 #=============================================================================
+# Target rules for targets named agents
+
+# Build rule for target.
+agents: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 agents
+.PHONY : agents
+
+# fast build rule for target.
+agents/fast:
+	$(MAKE) $(MAKESILENT) -f backend/agents/CMakeFiles/agents.dir/build.make backend/agents/CMakeFiles/agents.dir/build
+.PHONY : agents/fast
+
+#=============================================================================
+# Target rules for targets named solvers
+
+# Build rule for target.
+solvers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 solvers
+.PHONY : solvers
+
+# fast build rule for target.
+solvers/fast:
+	$(MAKE) $(MAKESILENT) -f backend/solvers/CMakeFiles/solvers.dir/build.make backend/solvers/CMakeFiles/solvers.dir/build
+.PHONY : solvers/fast
+
+#=============================================================================
 # Target rules for targets named ui
 
 # Build rule for target.
@@ -187,8 +213,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... agents"
 	@echo "... backend"
 	@echo "... nomnomGame"
+	@echo "... solvers"
 	@echo "... ui"
 	@echo "... main.o"
 	@echo "... main.i"

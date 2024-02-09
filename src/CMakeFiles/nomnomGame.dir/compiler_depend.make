@@ -183,9 +183,14 @@ CMakeFiles/nomnomGame.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/bits/istream.tcc \
   ui/cliGameDisplay.hpp \
   ui/gameDisplay.hpp \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   backend/gamespace.hpp \
-  backend/prey.hpp \
-  backend/agent.hpp \
+  backend/agents/prey.hpp \
+  backend/agents/agent.hpp \
   backend/position.hpp \
   /usr/include/c++/11/cmath \
   /usr/include/math.h \
@@ -212,7 +217,10 @@ CMakeFiles/nomnomGame.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  backend/predator.hpp \
+  backend/agents/predator.hpp \
+  backend/solvers/solver.hpp \
+  backend/solvers/predatorSolver.hpp \
+  backend/solvers/preySolver.hpp \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/tuple \
@@ -231,11 +239,6 @@ CMakeFiles/nomnomGame.dir/main.cpp.o: main.cpp \
   backend/randomGen.hpp \
   /usr/include/c++/11/random \
   /usr/include/c++/11/bits/random.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
   /usr/include/c++/11/bits/random.tcc \
@@ -245,12 +248,6 @@ CMakeFiles/nomnomGame.dir/main.cpp.o: main.cpp \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h
 
-
-/usr/include/c++/11/bits/vector.tcc:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/c++/11/vector:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -267,6 +264,8 @@ backend/randomGen.hpp:
 /usr/include/c++/11/bits/stl_relops.h:
 
 /usr/include/c++/11/bits/std_thread.h:
+
+backend/solvers/preySolver.hpp:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
@@ -296,11 +295,15 @@ backend/randomGen.hpp:
 
 backend/position.hpp:
 
+/usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
 /usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
-backend/agent.hpp:
+/usr/include/c++/11/vector:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -333,6 +336,8 @@ backend/gamespace.hpp:
 /usr/include/c++/11/bits/basic_ios.h:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
+
+backend/agents/agent.hpp:
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
@@ -400,6 +405,8 @@ backend/gamespace.hpp:
 
 /usr/include/c++/11/bits/functional_hash.h:
 
+backend/solvers/predatorSolver.hpp:
+
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/ctype.h:
@@ -408,6 +415,8 @@ backend/gamespace.hpp:
 
 /usr/include/c++/11/initializer_list:
 
+backend/agents/predator.hpp:
+
 /usr/include/c++/11/streambuf:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
@@ -415,8 +424,6 @@ backend/gamespace.hpp:
 /usr/include/c++/11/bits/functexcept.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
-
-backend/predator.hpp:
 
 /usr/include/c++/11/bits/string_view.tcc:
 
@@ -493,6 +500,8 @@ backend/predator.hpp:
 /usr/include/c++/11/bits/ostream_insert.h:
 
 /usr/include/c++/11/debug/assertions.h:
+
+backend/solvers/solver.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
@@ -682,6 +691,8 @@ backend/predator.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
+backend/agents/prey.hpp:
+
 /usr/include/c++/11/ext/new_allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
@@ -711,8 +722,6 @@ backend/predator.hpp:
 /usr/include/c++/11/iostream:
 
 /usr/include/c++/11/backward/binders.h:
-
-backend/prey.hpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 

@@ -84,15 +84,50 @@ clean: ui/clean
 
 # Recursive "all" directory target.
 backend/all: backend/CMakeFiles/backend.dir/all
+backend/all: backend/agents/all
+backend/all: backend/solvers/all
 .PHONY : backend/all
 
 # Recursive "preinstall" directory target.
-backend/preinstall:
+backend/preinstall: backend/agents/preinstall
+backend/preinstall: backend/solvers/preinstall
 .PHONY : backend/preinstall
 
 # Recursive "clean" directory target.
 backend/clean: backend/CMakeFiles/backend.dir/clean
+backend/clean: backend/agents/clean
+backend/clean: backend/solvers/clean
 .PHONY : backend/clean
+
+#=============================================================================
+# Directory level rules for directory backend/agents
+
+# Recursive "all" directory target.
+backend/agents/all: backend/agents/CMakeFiles/agents.dir/all
+.PHONY : backend/agents/all
+
+# Recursive "preinstall" directory target.
+backend/agents/preinstall:
+.PHONY : backend/agents/preinstall
+
+# Recursive "clean" directory target.
+backend/agents/clean: backend/agents/CMakeFiles/agents.dir/clean
+.PHONY : backend/agents/clean
+
+#=============================================================================
+# Directory level rules for directory backend/solvers
+
+# Recursive "all" directory target.
+backend/solvers/all: backend/solvers/CMakeFiles/solvers.dir/all
+.PHONY : backend/solvers/all
+
+# Recursive "preinstall" directory target.
+backend/solvers/preinstall:
+.PHONY : backend/solvers/preinstall
+
+# Recursive "clean" directory target.
+backend/solvers/clean: backend/solvers/CMakeFiles/solvers.dir/clean
+.PHONY : backend/solvers/clean
 
 #=============================================================================
 # Directory level rules for directory ui
@@ -117,12 +152,12 @@ CMakeFiles/nomnomGame.dir/all: backend/CMakeFiles/backend.dir/all
 CMakeFiles/nomnomGame.dir/all: ui/CMakeFiles/ui.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nomnomGame.dir/build.make CMakeFiles/nomnomGame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/SMA/src/CMakeFiles --progress-num=7,8 "Built target nomnomGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/SMA/src/CMakeFiles --progress-num=8,9 "Built target nomnomGame"
 .PHONY : CMakeFiles/nomnomGame.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nomnomGame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nomnomGame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 0
 .PHONY : CMakeFiles/nomnomGame.dir/rule
@@ -143,12 +178,12 @@ CMakeFiles/nomnomGame.dir/clean:
 backend/CMakeFiles/backend.dir/all:
 	$(MAKE) $(MAKESILENT) -f backend/CMakeFiles/backend.dir/build.make backend/CMakeFiles/backend.dir/depend
 	$(MAKE) $(MAKESILENT) -f backend/CMakeFiles/backend.dir/build.make backend/CMakeFiles/backend.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/SMA/src/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target backend"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/SMA/src/CMakeFiles --progress-num=5,6,7 "Built target backend"
 .PHONY : backend/CMakeFiles/backend.dir/all
 
 # Build rule for subdir invocation for target.
 backend/CMakeFiles/backend.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/CMakeFiles/backend.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 0
 .PHONY : backend/CMakeFiles/backend.dir/rule
@@ -163,13 +198,65 @@ backend/CMakeFiles/backend.dir/clean:
 .PHONY : backend/CMakeFiles/backend.dir/clean
 
 #=============================================================================
+# Target rules for target backend/agents/CMakeFiles/agents.dir
+
+# All Build rule for target.
+backend/agents/CMakeFiles/agents.dir/all:
+	$(MAKE) $(MAKESILENT) -f backend/agents/CMakeFiles/agents.dir/build.make backend/agents/CMakeFiles/agents.dir/depend
+	$(MAKE) $(MAKESILENT) -f backend/agents/CMakeFiles/agents.dir/build.make backend/agents/CMakeFiles/agents.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/SMA/src/CMakeFiles --progress-num=1,2,3,4 "Built target agents"
+.PHONY : backend/agents/CMakeFiles/agents.dir/all
+
+# Build rule for subdir invocation for target.
+backend/agents/CMakeFiles/agents.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/agents/CMakeFiles/agents.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 0
+.PHONY : backend/agents/CMakeFiles/agents.dir/rule
+
+# Convenience name for target.
+agents: backend/agents/CMakeFiles/agents.dir/rule
+.PHONY : agents
+
+# clean rule for target.
+backend/agents/CMakeFiles/agents.dir/clean:
+	$(MAKE) $(MAKESILENT) -f backend/agents/CMakeFiles/agents.dir/build.make backend/agents/CMakeFiles/agents.dir/clean
+.PHONY : backend/agents/CMakeFiles/agents.dir/clean
+
+#=============================================================================
+# Target rules for target backend/solvers/CMakeFiles/solvers.dir
+
+# All Build rule for target.
+backend/solvers/CMakeFiles/solvers.dir/all:
+	$(MAKE) $(MAKESILENT) -f backend/solvers/CMakeFiles/solvers.dir/build.make backend/solvers/CMakeFiles/solvers.dir/depend
+	$(MAKE) $(MAKESILENT) -f backend/solvers/CMakeFiles/solvers.dir/build.make backend/solvers/CMakeFiles/solvers.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/SMA/src/CMakeFiles --progress-num=10,11,12,13 "Built target solvers"
+.PHONY : backend/solvers/CMakeFiles/solvers.dir/all
+
+# Build rule for subdir invocation for target.
+backend/solvers/CMakeFiles/solvers.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/solvers/CMakeFiles/solvers.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kanken/code/cpp-adv/SMA/src/CMakeFiles 0
+.PHONY : backend/solvers/CMakeFiles/solvers.dir/rule
+
+# Convenience name for target.
+solvers: backend/solvers/CMakeFiles/solvers.dir/rule
+.PHONY : solvers
+
+# clean rule for target.
+backend/solvers/CMakeFiles/solvers.dir/clean:
+	$(MAKE) $(MAKESILENT) -f backend/solvers/CMakeFiles/solvers.dir/build.make backend/solvers/CMakeFiles/solvers.dir/clean
+.PHONY : backend/solvers/CMakeFiles/solvers.dir/clean
+
+#=============================================================================
 # Target rules for target ui/CMakeFiles/ui.dir
 
 # All Build rule for target.
 ui/CMakeFiles/ui.dir/all:
 	$(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/depend
 	$(MAKE) $(MAKESILENT) -f ui/CMakeFiles/ui.dir/build.make ui/CMakeFiles/ui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/SMA/src/CMakeFiles --progress-num=9,10 "Built target ui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kanken/code/cpp-adv/SMA/src/CMakeFiles --progress-num=14,15 "Built target ui"
 .PHONY : ui/CMakeFiles/ui.dir/all
 
 # Build rule for subdir invocation for target.

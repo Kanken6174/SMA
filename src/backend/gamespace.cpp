@@ -1,19 +1,55 @@
 #include "gamespace.hpp"
 #include "randomGen.hpp"
 #include <iostream>
+#include "randomGen.hpp"
+#include "solvers/predatorSolver.hpp"
+#include "solvers/preySolver.hpp"
+#include "agents/predator.hpp"
+#include "agents/prey.hpp"
 
-Gamespace::Gamespace(int xmax, int ymax) : _xmax(xmax), _ymax(ymax), 
-_pred(Position(1, 1, xmax, ymax)), _prey(Position(xmax-1, ymax-1, xmax, ymax)) 
+Gamespace::Gamespace(int xmax, int ymax, int amountPrey, int amoundPred) : _xmax(xmax), _ymax(ymax)
 {
     std::cout << "Limits picked:" << _xmax << "|" << ymax << std::endl;
+    RandomGen randomGenX(0, _xmax);
+    RandomGen randomGenY(0, _ymax);
+
+    //spawn prey at random positions
+    for (int i = 0; i < amountPrey; i++)
+    {
+        Position p = Position(randomGenX.getRand(), randomGenY.getRand(), _xmax, _ymax);
+        _prey.push_back(Prey(p, preyS));
+    }
+
+    //spawn predators at random position
+    for (int i = 0; i < amoundPred; i++)
+    {
+        Position p = Position(randomGenX.getRand(), randomGenY.getRand(), _xmax, _ymax);
+        _pred.push_back(Predator(p, predS));
+    }
 }
 
 bool Gamespace::updatePrey() {
-    _prey.move(_pred.getPosition());
-    return _pred.getPosition() != _prey.getPosition();
+    for (auto& p : _prey) {
+        if(p.getLive())
+            p.move(_pred);
+    }
+    return false;
+}
+
+const std::vector<Agent> Gamespace::getAgentsPred() const
+{
+    return _pred;
+}
+
+const std::vector<Agent> Gamespace::getAgentsPrey() const
+{
+    return _prey;
 }
 
 bool Gamespace::updatePred() {
-    _pred.move(_prey.getPosition());
-    return _pred.getPosition() != _prey.getPosition();
+    for (auto& p : _prey) {
+        if(p.getLive())
+            p.move(_pred);
+    }
+    return false;
 }

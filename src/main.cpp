@@ -5,9 +5,8 @@
 #include "./backend/randomGen.hpp"
 int main(){
     CliGameDisplay display;
-    Gamespace gamespace = Gamespace(12, 24);
+    Gamespace gamespace = Gamespace(12, 24, 2, 2);
     RandomGen gen(0,1);
-    std::cout << gamespace.getPositionPred().x << std::endl;
     do{
         bool nover = gamespace.updatePrey();
         //random bonus turn for prey

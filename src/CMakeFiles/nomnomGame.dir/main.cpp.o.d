@@ -148,10 +148,14 @@ CMakeFiles/nomnomGame.dir/main.cpp.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /home/kanken/code/cpp-adv/SMA/src/./ui/cliGameDisplay.hpp \
  /home/kanken/code/cpp-adv/SMA/src/./ui/gameDisplay.hpp \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
  /home/kanken/code/cpp-adv/SMA/src/./backend/gamespace.hpp \
- /home/kanken/code/cpp-adv/SMA/src/./backend/prey.hpp \
- /home/kanken/code/cpp-adv/SMA/src/./backend/agent.hpp \
- /home/kanken/code/cpp-adv/SMA/src/./backend/position.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/./agents/prey.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/./agents/agent.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/./agents/../position.hpp \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -175,7 +179,10 @@ CMakeFiles/nomnomGame.dir/main.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/kanken/code/cpp-adv/SMA/src/./backend/predator.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/./agents/predator.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/./solvers/solver.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/solvers/predatorSolver.hpp \
+ /home/kanken/code/cpp-adv/SMA/src/./backend/solvers/preySolver.hpp \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/tuple /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/array \
@@ -187,10 +194,6 @@ CMakeFiles/nomnomGame.dir/main.cpp.o: \
  /usr/include/c++/11/bits/parse_numbers.h \
  /home/kanken/code/cpp-adv/SMA/src/./backend/randomGen.hpp \
  /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
