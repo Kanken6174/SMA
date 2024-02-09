@@ -1,4 +1,4 @@
-#pragma once
+//#pragma once
 #include "predator.hpp"
 
 class Prey : public Agent {

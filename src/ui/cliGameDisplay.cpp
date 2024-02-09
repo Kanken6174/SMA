@@ -2,17 +2,17 @@
 #include "cliGameDisplay.hpp"
 #include <iostream>
 
-char32_t CliGameDisplay::charForCell(int x, int y, std::vector<Agent>& pv_prey, std::vector<Agent>& pv_pred)
+char32_t CliGameDisplay::charForCell(int x, int y, std::vector<std::shared_ptr<Agent>>& pv_prey, std::vector<std::shared_ptr<Agent>>& pv_pred)
 {
     unsigned int idx = (x % 2 == 0) + (y % 2 == 0); //tree type
     
-    for(Agent& a : pv_prey){
-        Position p = a.getPosition();
+    for(std::shared_ptr<Agent>& a : pv_prey){
+        Position p = a->getPosition();
         if(p.x == x && p.y == y)
-            idx = a.getLive() ? 2 : 4;
+            idx = a->getLive() ? 2 : 4;
     }
-    for(Agent& a : pv_prey){
-        Position p = a.getPosition();
+    for(std::shared_ptr<Agent>& a : pv_prey){
+        Position p = a->getPosition();
         if(p.x == x && p.y == y)
             idx = 3;
     }
@@ -21,10 +21,10 @@ char32_t CliGameDisplay::charForCell(int x, int y, std::vector<Agent>& pv_prey, 
 
 void CliGameDisplay::displayCurrent(const Gamespace &g)
 {
-    std::vector<Agent> pv_prey = g.getAgentsPrey();
-    std::vector<Agent> pv_pred = g.getAgentsPred();
-    int xmax = pv_prey[0].getPosition().xmax;
-    int ymax = pv_prey[0].getPosition().xmax;
+    std::vector<std::shared_ptr<Agent>> pv_prey = g.getAgentsPrey();
+    std::vector<std::shared_ptr<Agent>> pv_pred = g.getAgentsPred();
+    int xmax = pv_prey[0]->getPosition().xmax;
+    int ymax = pv_prey[0]->getPosition().xmax;
     //clear
     system("clear");
     //draw

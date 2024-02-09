@@ -19,6 +19,4 @@ add_subdirectory(solvers)
 
 set_target_properties(backend PROPERTIES LINKER_LANGUAGE CXX)
 
-set_target_properties(backend PROPERTIES LINKER_LANGUAGE CXX)
-
-link_libraries(backend agents)
+link_libraries(backend solvers agents)

@@ -1,6 +1,7 @@
-#pragma once
+//#pragma once
 #include "../position.hpp"
 #include <vector>
+#include <memory>
 
 class Solver;
 
@@ -24,7 +25,7 @@ public:
     void kill();
 
     // Give the positions of the other agents
-    virtual void move(std::vector<Agent>& v);
+    void move(std::vector<std::shared_ptr<Agent>>& v);
 
     void setSolver(Solver& s);
 };

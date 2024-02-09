@@ -18,6 +18,6 @@ add_subdirectory(ui)
 
 add_executable(nomnomGame ${main_source_files})
 
-target_link_libraries(nomnomGame backend ui)
+target_link_libraries(nomnomGame backend ui agents solvers)
 
 MESSAGE(STATUS "CMAKE FLAGS : ${LINK_OPTIONS}")

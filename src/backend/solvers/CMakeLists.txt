@@ -15,4 +15,6 @@ set(local_src
 
 add_library(solvers ${local_src})
 
+link_libraries(solvers agents)
+
 set_target_properties(solvers PROPERTIES LINKER_LANGUAGE CXX)

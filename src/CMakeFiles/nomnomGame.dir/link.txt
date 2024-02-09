@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/nomnomGame.dir/main.cpp.o -o nomnomGame  backend/libbackend.a ui/libui.a 
+/usr/bin/c++ -rdynamic CMakeFiles/nomnomGame.dir/main.cpp.o -o nomnomGame  backend/libbackend.a ui/libui.a backend/agents/libagents.a backend/solvers/libsolvers.a 

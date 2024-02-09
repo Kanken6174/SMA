@@ -22,7 +22,7 @@ void Agent::kill(){
     _alive = false;
 }
 
-void Agent::move(std::vector<Agent> &v)
+void Agent::move(std::vector<std::shared_ptr<Agent>>& v)
 {
     _p = _s.solve(*this, v);
 }

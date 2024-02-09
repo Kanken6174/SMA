@@ -1,14 +1,12 @@
 #include "./agents/prey.hpp"
 #include "position.hpp"
-#include "./agents/predator.hpp"
 #include <vector>
-#include "./solvers/solver.hpp"
-#include "solvers/predatorSolver.hpp"
 #include "solvers/preySolver.hpp"
+#include <memory>
 class Gamespace {
     protected:
-        std::vector<Agent> _pred;
-        std::vector<Agent> _prey;
+        std::vector<std::shared_ptr<Agent>> _pred;
+        std::vector<std::shared_ptr<Agent>> _prey;
         PredatorSolver predS;
         PreySolver preyS;
         int _xmax = 25;
@@ -19,6 +17,6 @@ class Gamespace {
         bool updatePrey();
         const std::vector<Position> getPositionPred() const;
         const std::vector<Position> getPositionPrey() const;
-        const std::vector<Agent> getAgentsPred() const;
-        const std::vector<Agent> getAgentsPrey() const;
+        const std::vector<std::shared_ptr<Agent>> getAgentsPred() const;
+        const std::vector<std::shared_ptr<Agent>> getAgentsPrey() const;
 };

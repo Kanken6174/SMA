@@ -5,8 +5,8 @@ set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -fPIC -ldl")
 set(CMAKE_CXX_STANDARD 17)
 
 set(local_src
-    agent.cpp
     agent.hpp
+    agent.cpp
     predator.hpp
     predator.cpp
     prey.hpp

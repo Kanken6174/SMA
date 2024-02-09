@@ -2,10 +2,6 @@
 #include "randomGen.hpp"
 #include <iostream>
 #include "randomGen.hpp"
-#include "solvers/predatorSolver.hpp"
-#include "solvers/preySolver.hpp"
-#include "agents/predator.hpp"
-#include "agents/prey.hpp"
 
 Gamespace::Gamespace(int xmax, int ymax, int amountPrey, int amoundPred) : _xmax(xmax), _ymax(ymax)
 {
@@ -16,40 +12,40 @@ Gamespace::Gamespace(int xmax, int ymax, int amountPrey, int amoundPred) : _xmax
     //spawn prey at random positions
     for (int i = 0; i < amountPrey; i++)
     {
-        Position p = Position(randomGenX.getRand(), randomGenY.getRand(), _xmax, _ymax);
-        _prey.push_back(Prey(p, preyS));
+        Position p(randomGenX.getRand(), randomGenY.getRand(), _xmax, _ymax);
+        _prey.push_back(std::make_shared<Prey>(p, preyS));
     }
 
     //spawn predators at random position
     for (int i = 0; i < amoundPred; i++)
     {
-        Position p = Position(randomGenX.getRand(), randomGenY.getRand(), _xmax, _ymax);
-        _pred.push_back(Predator(p, predS));
+        Position p(randomGenX.getRand(), randomGenY.getRand(), _xmax, _ymax);
+        _pred.push_back(std::make_shared<Predator>(p, predS));
     }
 }
 
 bool Gamespace::updatePrey() {
-    for (auto& p : _prey) {
-        if(p.getLive())
-            p.move(_pred);
+    for (std::shared_ptr<Agent>& p : _prey) {
+        if(p->getLive())
+            p->move(_pred);
     }
     return false;
-}
-
-const std::vector<Agent> Gamespace::getAgentsPred() const
-{
-    return _pred;
-}
-
-const std::vector<Agent> Gamespace::getAgentsPrey() const
-{
-    return _prey;
 }
 
 bool Gamespace::updatePred() {
     for (auto& p : _prey) {
-        if(p.getLive())
-            p.move(_pred);
+        if(p->getLive())
+            p->move(_pred);
     }
     return false;
+}
+
+const std::vector<std::shared_ptr<Agent>> Gamespace::getAgentsPred() const
+{
+    return _pred;
+}
+
+const std::vector<std::shared_ptr<Agent>> Gamespace::getAgentsPrey() const
+{
+    return _prey;
 }

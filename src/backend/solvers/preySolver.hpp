@@ -1,5 +1,5 @@
-#pragma once
-#include "solver.hpp"
+//#pragma once
+#include "predatorSolver.hpp"
 
 class PreySolver : public Solver {
 public:
