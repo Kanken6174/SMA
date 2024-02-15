@@ -14,13 +14,15 @@ Gamespace::Gamespace(int xmax, int ymax, int amountPrey, int amoundPred) : _xmax
     {
         Position p(randomGenX.getRand(), randomGenY.getRand(), _xmax, _ymax);
         _prey.push_back(std::make_shared<Prey>(p, preyS));
+        std::cout << "prey spawned at: " << p.x << "|" << p.y << "\n";
     }
 
     //spawn predators at random position
     for (int i = 0; i < amoundPred; i++)
     {
-        Position p(randomGenX.getRand(), randomGenY.getRand(), _xmax, _ymax);
-        _pred.push_back(std::make_shared<Predator>(p, predS));
+        Position p2(randomGenX.getRand(), randomGenY.getRand(), _xmax, _ymax);
+        _pred.push_back(std::make_shared<Predator>(p2, predS));
+        std::cout << "predator spawned at: " << p2.x << "|" << p2.y << "\n";
     }
 }
 

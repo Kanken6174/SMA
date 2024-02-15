@@ -12,14 +12,14 @@ int main(){
         //random bonus turn for prey
         if(gen.getRand() % 2 == 0) nover = gamespace.updatePrey();
         display.displayCurrent(gamespace);
-        std::this_thread::sleep_for(std::chrono::milliseconds(250));
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
         
-        if(!nover) break;
+        //if(!nover) break;
             
         nover = gamespace.updatePred();
         display.displayCurrent(gamespace);
-        std::this_thread::sleep_for(std::chrono::milliseconds(250));
-        if(!nover) break;
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+        //if(!nover) break;
     }while(true);
     std::cout << "Game over! Pikachu was dismembered violently" << std::endl;
     return 0;

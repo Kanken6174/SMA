@@ -8,7 +8,7 @@ class Solver;
 class Agent{
 protected:
     Position _p;
-    bool _alive;
+    bool _alive = true;
     Solver& _s;
 public:
     Agent(Position p, Solver& s);
