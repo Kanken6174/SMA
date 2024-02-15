@@ -42,6 +42,17 @@ bool Gamespace::updatePrey() {
         if(p->getLive())
             p->move(_pred);
     }
+
+    //break up clusters of prey (same cell) 
+    for (std::shared_ptr<Agent>& p : _prey) {
+        if(p->getLive()){
+            for (std::shared_ptr<Agent>& p2 : _prey) {
+                if(p->getPosition() == p2->getPosition() && p != p2){
+                    p2->move(_pred);
+                }
+            }
+        }
+    }
     return false;
 }
 
@@ -53,6 +64,17 @@ bool Gamespace::updatePred() {
             for (auto& p2 : _prey) {
                 if(p->getPosition() == p2->getPosition()){
                     p2->kill();
+                }
+            }
+        }
+    }
+
+    //break up clusters of predators (same cell)
+    for (auto& p : _pred) {
+        if(p->getLive()){
+            for (auto& p2 : _pred) {
+                if(p->getPosition() == p2->getPosition() && p != p2){
+                    p2->move(_prey);
                 }
             }
         }

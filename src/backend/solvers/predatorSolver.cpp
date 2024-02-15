@@ -6,8 +6,8 @@ Position PredatorSolver::solve(const Position &positionToSolve, std::vector<Posi
 {
     if(positionToSolve.outOfBounds()){
         std::cout << "PredatorSolver: out of bounds" << std::endl;
-        std::cout << positionToSolve.x << " " << positionToSolve.y << " " << positionToSolve.xmax << " " << positionToSolve.ymax << std::endl;
-        exit(0);
+        //std::cout << positionToSolve.x << " " << positionToSolve.y << " " << positionToSolve.xmax << " " << positionToSolve.ymax << std::endl;
+        //exit(0);
     }
 
 

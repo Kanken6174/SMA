@@ -5,7 +5,7 @@
 #include "./backend/randomGen.hpp"
 int main(){
     CliGameDisplay display;
-    Gamespace gamespace = Gamespace(12, 24, 3, 3);
+    Gamespace gamespace = Gamespace(24, 48, 6, 3);
     RandomGen gen(0,1);
     do{
         bool nover = gamespace.updatePrey();

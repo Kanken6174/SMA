@@ -6,8 +6,8 @@ Position PreySolver::solve(const Position &positionToSolve, std::vector<Position
 {
     if(positionToSolve.outOfBounds()){
         std::cout << "PreySolver: out of bounds" << std::endl;
-        std::cout << positionToSolve.x << " " << positionToSolve.y << " " << positionToSolve.xmax << " " << positionToSolve.ymax << std::endl;
-        exit(0);
+        //std::cout << positionToSolve.x << " " << positionToSolve.y << " " << positionToSolve.xmax << " " << positionToSolve.ymax << std::endl;
+        //exit(0);
     }
 
     //prey logic: get as far as possible from the position p and as far as possible from the limits, with a bias towards being far from P
@@ -21,7 +21,7 @@ Position PreySolver::solve(const Position &positionToSolve, std::vector<Position
                 //position to be tested (one of 9 around the current position)
                 if(ptest.outOfBounds())
                     continue;
-                float dist = ptest.distance(p) - ptest.boundDiagDistance()+5;
+                float dist = (ptest.distance(p)*2) - ptest.boundDiagDistance()+2;
                 if(dist > score){
                     score = dist;
                     nextp = ptest;

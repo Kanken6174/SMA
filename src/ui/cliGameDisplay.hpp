@@ -6,7 +6,7 @@ class Gamespace;
 class Agent;
 class CliGameDisplay : public GameDisplay {
     protected:
-        std::vector<std::string> icons = {"🌳","🌲","🐇","🐺","💥"};
+        std::vector<std::string> icons = {"🌳","🌲","🐇","🐺","💀"};
         std::string charForCell(int x, int y, std::vector<std::shared_ptr<Agent>>& pv_prey, std::vector<std::shared_ptr<Agent>>& pv_pred);
 
     public:
