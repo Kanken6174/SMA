@@ -41,10 +41,5 @@ Position PreySolver::solve(const Position &positionToSolve, std::vector<Position
             }
         }
     }
-
-    if(nextp == positionToSolve){
-        std::cout << "PreySolver: no move found" << std::endl;
-        exit(0);
-    }
     return nextp;
 }

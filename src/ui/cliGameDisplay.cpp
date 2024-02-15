@@ -20,9 +20,6 @@ std::string CliGameDisplay::charForCell(int x, int y, std::vector<std::shared_pt
     for(std::shared_ptr<Agent>& a2 : pv_prey){   //prey positions
         Position p = a2->getPosition();
         if(p.x == x && p.y == y){
-            if(idx == 3){
-                throw std::runtime_error("prey and predator at the same position: " + std::to_string(x) + "|" + std::to_string(y));
-            }
             idx = a2->getLive() ? 2 : 4;
             
         }

@@ -44,8 +44,6 @@ Position PredatorSolver::solve(const Position &positionToSolve, std::vector<Posi
 
     if(nextp == positionToSolve){
         std::cout << "PredatorSolver: no move found" << std::endl;
-        exit(0);
     }
-    
     return nextp;
 }

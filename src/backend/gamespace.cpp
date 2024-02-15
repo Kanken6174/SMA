@@ -27,6 +27,17 @@ Gamespace::Gamespace(int xmax, int ymax, int amountPrey, int amoundPred) : _xmax
 }
 
 bool Gamespace::updatePrey() {
+    //check if all prey are dead
+    bool allDead = true;
+    for (std::shared_ptr<Agent>& p : _prey) {
+        if(p->getLive())
+            allDead = false;
+    }
+    if(allDead){
+        std::cout << "All prey are dead" << std::endl;
+        return true;
+    }
+
     for (std::shared_ptr<Agent>& p : _prey) {
         if(p->getLive())
             p->move(_pred);
@@ -35,9 +46,16 @@ bool Gamespace::updatePrey() {
 }
 
 bool Gamespace::updatePred() {
-    for (auto& p : _prey) {
-        if(p->getLive())
-            p->move(_pred);
+    for (auto& p : _pred) {
+        if(p->getLive()){
+            p->move(_prey);
+            //check for kills
+            for (auto& p2 : _prey) {
+                if(p->getPosition() == p2->getPosition()){
+                    p2->kill();
+                }
+            }
+        }
     }
     return false;
 }
